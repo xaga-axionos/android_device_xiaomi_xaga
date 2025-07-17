@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+    Copyright (C) 2025 The LineageOS Project
+
+    SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="personalisations_device_message" translatable="false">Redmi Note 11T Pro+</string>
+    <string name="personalisations_battery_type_message" translatable="false">4400 mAh</string>
+</resources>
