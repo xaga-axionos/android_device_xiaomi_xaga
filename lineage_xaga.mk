@@ -22,6 +22,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # ROM Flags
 TARGET_DISABLE_EPPE := true
 WITH_GMS := true
+TARGET_INCLUDE_VIPERFX := true
+TARGET_ENABLE_BLUR := true
 
 PRODUCT_BRAND := Redmi
 PRODUCT_DEVICE := xaga
@@ -37,15 +39,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=Redmi/xaga/xaga:12/SP1A.210812.016/OS2.0.7.0.ULOCNXM:user/release-keys \
     DeviceProduct=xaga
 
-# Device Information
+# Axion Device Information
 AXION_CAMERA_REAR_INFO := 64,8,2
 AXION_CAMERA_FRONT_INFO := 16
 AXION_MAINTAINER := reverdd
 AXION_PROCESSOR := Dimensity_8100
-
-# Axion Flags
-TARGET_INCLUDE_VIPERFX := true
-TARGET_ENABLE_BLUR := true
 
 # Axion CPUsets
 AXION_CPU_SMALL_CORES := 0,1,2,3
