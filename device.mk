@@ -58,7 +58,8 @@ PRODUCT_PACKAGES += \
 # Rootdir
 PRODUCT_PACKAGES += \
     init.project.rc \
-    init.xaga.rc
+    init.xaga.rc \
+    secure.rc
 
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 31
