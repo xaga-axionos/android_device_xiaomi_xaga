@@ -20,8 +20,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.secure.rc",
-    src: "init.secure.rc",
+    name: "secure.rc",
+    src: "secure.rc",
     sub_dir: "init",
     vendor: false,
 }
