@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/xaga/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2460
@@ -23,13 +23,12 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_DISABLE_EPPE := true
 WITH_GMS := true
 TARGET_INCLUDE_VIPERFX := true
-TARGET_ENABLE_BLUR := true
 
 PRODUCT_BRAND := Redmi
 PRODUCT_DEVICE := xaga
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 22041216C
-PRODUCT_NAME := lineage_xaga
+PRODUCT_NAME := yaap_xaga
 PRODUCT_SYSTEM_NAME := xaga
 
 PRODUCT_CHARACTERISTICS := nosdcard
@@ -38,21 +37,3 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=Redmi/xaga/xaga:12/SP1A.210812.016/OS2.0.7.0.ULOCNXM:user/release-keys \
     DeviceProduct=xaga
-
-# Axion Device Information
-AXION_CAMERA_REAR_INFO := 64,8,2
-AXION_CAMERA_FRONT_INFO := 16
-AXION_MAINTAINER := reverdd
-AXION_PROCESSOR := Mediatek_Dimensity_8100
-
-# Axion CPUsets
-AXION_CPU_SMALL_CORES := 0,1,2,3
-AXION_CPU_BIG_CORES := 4,5,6,7
-AXION_CPU_BG := 0-3
-AXION_CPU_FG := 0-5
-AXION_CPU_LIMIT_BG := 0-1
-AXION_CPU_UNLIMIT_UI := 0-7
-AXION_CPU_LIMIT_UI := 0-4
-AXION_CPU_DISPLAY := 4-7
-AXION_CPU_AUDIO := 0-3
-AXION_DEBUGGING_ENABLED := false
