@@ -13,6 +13,10 @@ $(call inherit-product-if-exists, vendor/firmware/xaga/firmware.mk)
 # Call the MiuiCamera setup
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera-xaga/device.mk)
 
+# Debloat unwanted packages
+PRODUCT_PACKAGES += \
+    debloat
+
 # Fastboot package
 PRODUCT_BUILD_SUPER_PARTITION := true
 PRODUCT_FASTBOOT_TEMPLATE_ZIP := $(LOCAL_PATH)/prebuilts/fastboot.zip
