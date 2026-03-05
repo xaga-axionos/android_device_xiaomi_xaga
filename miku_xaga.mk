@@ -14,6 +14,12 @@ $(call inherit-product, device/xiaomi/xaga/device.mk)
 # Inherit some common Miku stuff.
 $(call inherit-product, vendor/miku/build/product/miku_product.mk)
 
+# Inherit ViPER4Android FX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
+# Inherit BCR
+$(call inherit-product, vendor/bcr/bcr.mk)
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2460
 TARGET_SCREEN_WIDTH := 1080
